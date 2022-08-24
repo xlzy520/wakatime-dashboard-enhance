@@ -1,15 +1,12 @@
-<template>
-  <nav text-xl mt-6 inline-flex gap-2>
-    <button icon-btn @click="toggleDark()">
-      <div dark:i-carbon-moon i-carbon-sun />
-    </button>
+<script setup>
+import { isDark } from '~/composables'
+</script>
 
-    <a
-      icon-btn i-carbon-logo-github
-      rel="noreferrer"
-      href="https://github.com/antfu/vitesse-lite"
-      target="_blank"
-      title="GitHub"
-    />
+<template>
+  <nav class="text-xl mt-6 inline-flex gap-2">
+    <button @click="toggleDark()">
+      <CarbonMoon v-if="isDark" />
+      <CarbonSun v-else />
+    </button>
   </nav>
 </template>

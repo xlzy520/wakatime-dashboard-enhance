@@ -7,6 +7,8 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    CarbonMoon: typeof import('./src/icons/CarbonMoon.vue')['default']
+    CarbonSun: typeof import('./src/icons/CarbonSun.vue')['default']
     Counter: typeof import('./src/components/Counter.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

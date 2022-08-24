@@ -1,87 +1,26 @@
-<p align='center'>
-  <img src='https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
-</p>
+# Wakatime Dashboard
+>Wakatime Dashboard gets data from Gist. 
 
-<h6 align='center'>
-<a href="https://vitesse-lite.netlify.app/">Live Demo</a>
-</h6>
+Wakatime Dashboard 用于显示从 WakaTime 备份到 Gist 的统计数据。
 
-<h5 align='center'>
-<b>Lightweight version of <a href="https://github.com/antfu/vitesse">Vitesse</a></b>
-</h5>
+![Wakatime Dashboard](./screenshot/wakatime-dashboard.jpg)
 
-<br>
+你可以点击这里访问 [Wakatime Dashboard](https://wakatime.chenhuichao.com)（已经提供了默认的 GistId 作为演示，实际使用需要替换成自己的 Gist ID）
 
-<p align='center'>
-<b>English</b> | <a href="https://github.com/antfu/vitesse-lite/blob/main/README.zh-CN.md">简体中文</a>
-<!-- Contributors: Thanks for geting interested, however we DON'T accept new transitions to the README, thanks. -->
-</p>
+如果觉得对你有帮助，请点波 star 支持下作者，非常感谢~
 
-## Features
+## 备份 WakaTime 数据到 Gist
+关于如何备份 WakaTime 数据到 Gist 的具体请可以看：[wakatime-sync](https://github.com/superman66/wakatime-sync)。
 
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+## Usage
 
-- 🗂 [File based routing](./src/pages)
+```
+git clone https://github.com/superman66/wakatime-dashboard.git && cd wakatime-dashboard
+npm run dev
+```
 
-- 📦 [Components auto importing](./src/components)
+## build
 
-- 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
-
-- 😃 Use icons from any icon sets in [Pure CSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
-
-- 🔥 Use the [new `<script setup>` style](https://github.com/vuejs/rfcs/pull/227)
-
-- ✅ Use [Vitest](http://vitest.dev/) for unit and components testing
-
-- 🦾 TypeScript, of course
-
-- ☁️ Deploy on Netlify, zero-config
-
-
-<br>
-
-See [Vitesse](https://github.com/antfu/vitesse) for full featureset.
-
-
-## Dropped Features from [Vitesse](https://github.com/antfu/vitesse)
-
-- ~~i18n~~
-- ~~Layouts~~
-- ~~SSG~~
-- ~~PWA~~
-- ~~Markdown~~
-
-## Pre-packed
-
-### UI Frameworks
-
-- [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
-
-### Icons
-
-- [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
-- [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
-
-### Plugins
-
-- [Vue Router](https://github.com/vuejs/vue-router)
-  - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
-- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - Directly use Vue Composition API and others without importing
-- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - components auto import
-- [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
-
-## Try it now!
-
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/antfu/vitesse-lite/generate).
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
-
-```bash
-npx degit antfu/vitesse-lite my-vitesse-app
-cd my-vitesse-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+```
+npm run build
 ```
